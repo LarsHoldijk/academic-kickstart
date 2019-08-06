@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Nelson Bighetti
+name: Lars Holdijk
 
 # Username (this should match the folder name)
 authors:
@@ -10,32 +10,29 @@ authors:
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: Graduate student in Machine Learning
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
-  url: ""
+- name: Radboud University Nijmegen
+  url: "https://www.ru.nl"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: Aspiring young student researcher in machine learning
 
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Robust machine learning
+- Interpretable machine learning
+- Learning Vector Quantization
 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: MSc in Computer Science
+    institution: Radboud University Nijmegen
+    year: 2019-2021
+  - course: BSc in Computer Science
+    institution: Rijksuniversiteit Groningen
+    year: 2015-2018
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -44,16 +41,16 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
+  link: "mailto:larsholdijk@gmail.com"
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: google-scholar
-  icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://twitter.com/HoldijkLars
+#- icon: google-scholar
+#  icon_pack: ai
+#  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/larsholdijk
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.  
 # - icon: cv
@@ -65,11 +62,10 @@ email: ""
   
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
-user_groups:
-- Researchers
-- Visitors
+#user_groups:
+#- Researchers
+#- Visitors
 ---
+I am an enthusiastic master student in computer science specializing in data science and machine learning at the Radboud university in Nijmegen. I obtained my bachelors degree in computer science from the [Rijksuniversiteit in Groningen](https://www.rug.nl/) in 2018. In addition to my course work, I have worked part-time as a Teacher Assistant for CS courses and as a software engineer at [Tedas](https://www.tedas.nl). After I obtained my bachelor degree, I spend a year as a student researcher at [Porsche](https://www.porsche.com/netherlands/nl/) in Weissach, Germany. 
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 
+During and after my master in computer science, I aspire to continue my research in robust/interpretable machine learning and explore other areas as well. To do this, I am always looking for new and interesting opportunities in the form of research internships or collaborations. After finalizing my masters degree I hope to join a PhD. program.
