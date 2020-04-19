@@ -6,7 +6,7 @@ subtitle: ""
 summary: ""
 authors: [""]
 tags: []
-categories: ["Presentation"]
+categories: ["Presentation", "Conference visit"]
 date: 2019-12-08T09:50:56+02:00
 lastmod: 2019-12-08T09:50:56+02:00
 featured: false
