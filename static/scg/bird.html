@@ -1,0 +1,105 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.css" type="text/css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"> </script>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 500px;
+            height: 500px;
+            background-color: #ffffff;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"id": "012.Yellow_headed_Blackbird", "label": "012.Yellow_headed_Blackbird", "shape": "dot", "title": "012.Yellow_headed_Blackbird"}, {"id": "078.Gray_Kingbird", "label": "078.Gray_Kingbird", "shape": "dot", "title": "078.Gray_Kingbird"}, {"id": "017.Cardinal", "label": "017.Cardinal", "shape": "dot", "title": "017.Cardinal"}, {"id": "067.Anna_Hummingbird", "label": "067.Anna_Hummingbird", "shape": "dot", "title": "067.Anna_Hummingbird"}, {"id": "020.Yellow_breasted_Chat", "label": "020.Yellow_breasted_Chat", "shape": "dot", "title": "020.Yellow_breasted_Chat"}, {"id": "079.Belted_Kingfisher", "label": "079.Belted_Kingfisher", "shape": "dot", "title": "079.Belted_Kingfisher"}, {"id": "047.American_Goldfinch", "label": "047.American_Goldfinch", "shape": "dot", "title": "047.American_Goldfinch"}, {"id": "108.White_necked_Raven", "label": "108.White_necked_Raven", "shape": "dot", "title": "108.White_necked_Raven"}, {"id": "056.Pine_Grosbeak", "label": "056.Pine_Grosbeak", "shape": "dot", "title": "056.Pine_Grosbeak"}, {"id": "188.Pileated_Woodpecker", "label": "188.Pileated_Woodpecker", "shape": "dot", "title": "188.Pileated_Woodpecker"}, {"id": "191.Red_headed_Woodpecker", "label": "191.Red_headed_Woodpecker", "shape": "dot", "title": "191.Red_headed_Woodpecker"}, {"id": "109.American_Redstart", "label": "109.American_Redstart", "shape": "dot", "title": "109.American_Redstart"}, {"id": "148.Green_tailed_Towhee", "label": "148.Green_tailed_Towhee", "shape": "dot", "title": "148.Green_tailed_Towhee"}, {"id": "193.Bewick_Wren", "label": "193.Bewick_Wren", "shape": "dot", "title": "193.Bewick_Wren"}]);
+        edges = new vis.DataSet([{"from": "012.Yellow_headed_Blackbird", "to": "078.Gray_Kingbird"}, {"from": "017.Cardinal", "to": "067.Anna_Hummingbird"}, {"from": "020.Yellow_breasted_Chat", "to": "079.Belted_Kingfisher"}, {"from": "047.American_Goldfinch", "to": "108.White_necked_Raven"}, {"from": "056.Pine_Grosbeak", "to": "188.Pileated_Woodpecker"}, {"from": "056.Pine_Grosbeak", "to": "191.Red_headed_Woodpecker"}, {"from": "109.American_Redstart", "to": "148.Green_tailed_Towhee"}, {"from": "109.American_Redstart", "to": "193.Bewick_Wren"}, {"from": "148.Green_tailed_Towhee", "to": "193.Bewick_Wren"}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": false,
+            "type": "continuous"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>
